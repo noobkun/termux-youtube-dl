@@ -27,6 +27,6 @@ mkdir -p $TERMUXURLOPENER_CONFIG_FOLDER
 # Download setup & config file
 curl -L https://raw.githubusercontent.com/noobkun/termux-youtube-dl/master/.ytdl.conf > "${YOUTUBEDL_CONFIG_FOLDER}/config"
 curl -L https://raw.githubusercontent.com/noobkun/termux-youtube-dl/master/share2youtubedl.sh > "${TERMUXURLOPENER_CONFIG_FOLDER}/termux-url-opener"
-
+apt -y upgrade && pip install --upgrade pip && pip install --upgrade youtube-dl > ~/.bashrc
 echo -e "${BLUE}Congratulations!!! Your setup is complete.\n\n"
 read -p "When you are ready just press enter"
